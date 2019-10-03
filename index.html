@@ -3,7 +3,74 @@
 <head>
 	<meta charset="UTF-8">
 	<title>My Photo Wall</title>
-	<link rel="stylesheet" href="CSS/style.css">
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<style type="text/css">
+		body{
+			background: #eee;
+		}
+		h1{
+			margin: 0 auto;
+			width: 960px;
+			text-align: center;
+			color: #000;
+			font-family: "微软雅黑"
+		}
+		.container{
+			width: 960px;
+			height: 450px;
+			margin: 60px auto;
+			position: relative;
+		}
+		.left-photo{
+			float: left;
+			width: 50%;
+			text-align: center;
+		}
+		.right-photo{
+			float: right;
+			width: 50%;
+			text-align: center;
+		}
+		.div-photo{
+			padding-top: 100px
+		}
+		.img-photo{
+			width: 50%;
+			height: 50%;
+			/* 白色边框 */
+			padding: 10px 15px;
+			background: #fff;
+			border: 1px solid #ddd;
+			/* 定位 */
+			/* position: absolute; */
+			top: 200px;
+			left: 300px;
+			/* 旋转角度 */
+			transform: rotate(105deg);
+			-webkit-transform: rotate(105deg);
+			-moz-transform: rotate(105deg);
+			/* 缓慢变化 */
+			transition: 1s;
+			-webkit-transition: 1s;
+			-moz-transition: 1s;
+
+			z-index: 1;
+		}
+		.img-photo:hover{
+			/* 旋转角度 */
+			/* transform: rotate(90deg);
+			-webkit-transform: rotate(90deg);
+			-moz-transform: rotate(90deg); */
+			/* 放大 */
+			transform: scale(2) rotate(90deg);	
+			-webkit-transform: scale(2) rotate(90deg);
+			-moz-transform: scale(2) rotate(90deg);
+			/* 加上阴影 */
+			box-shadow: 10px 10px 15px #ccc;
+			z-index: 2;
+		}
+
+	</style>
 </head>
 <body>
 	<h1 id="title">My Photo Wall</h1>
