@@ -26,14 +26,4 @@
 | **图片布局**     | CSS Grid 布局                | 定义行列间距与对齐方式       |
 | **阴影效果**     | `box-shadow` 多层叠加        | 增强立体层次感              |
 
-## 📂 项目结构
 
-```text
-CSS3-Photo-Wall/
-├── index.html          # 网页主结构
-├── style.css           # 核心动画样式
-├── images/             # 图片资源目录
-│   ├── photo1.jpg
-│   ├── photo2.jpg
-│   └── ... 
-└── README.md           # 项目说明文档
